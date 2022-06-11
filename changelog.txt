@@ -1,3 +1,7 @@
+1.4.2:
+Fixes:
+- Fix CTM blocks disappearing with Optifine multicore chunkloading enabled
+
 1.4.1:
 Changes
 - Call preRenderSide and postRenderSide even when rendering standard block
@@ -15,9 +19,9 @@ Changes
 - Update to latest Chisel API
 
 1.0.1:
-Changes
+Changes:
 - inWorld is now protected in RenderBlocksCTM
-Fixes
+Fixes:
 - Fix blocks not connecting to IFacade
 
 1.0.0:
