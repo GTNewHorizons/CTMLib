@@ -34,7 +34,7 @@ public class TextureSubmap implements IIcon, ISubmap {
 
 	/**
 	 * Construct a new submap. A submap is not required to be square, but it is required to be rectangular.
-	 * 
+	 *
 	 * @param baseIcon
 	 *            The IIcon to submap.
 	 * @param width
@@ -59,7 +59,7 @@ public class TextureSubmap implements IIcon, ISubmap {
 
 	/**
 	 * Gets all the icons in this submap. This is an expensive operation as it first clones the entire 2D array.
-	 * 
+	 *
 	 * @return All icons in this submap.
 	 */
 	public IIcon[][] getAllIcons() {
@@ -115,7 +115,6 @@ public class TextureSubmap implements IIcon, ISubmap {
 
 		private int width, height;
 		private float umin, umax, vmin, vmax;
-		private String name;
 		private IIcon parentIcon;
 
 		private TextureVirtual(IIcon parent, int w, int h, int x, int y) {
@@ -125,8 +124,6 @@ public class TextureSubmap implements IIcon, ISubmap {
 			umax = parentIcon.getInterpolatedU(16.0 * (x + 1) / w);
 			vmin = parentIcon.getInterpolatedV(16.0 * (y) / h);
 			vmax = parentIcon.getInterpolatedV(16.0 * (y + 1) / h);
-
-			name = parentIcon.getIconName() + "|" + x + "." + y;
 
 			width = parentIcon.getIconWidth();
 			height = parentIcon.getIconHeight();
@@ -171,7 +168,7 @@ public class TextureSubmap implements IIcon, ISubmap {
 		@Override
 		@SideOnly(Side.CLIENT)
 		public String getIconName() {
-			return name;
+			return parentIcon.getIconName();
 		}
 
 		@Override
