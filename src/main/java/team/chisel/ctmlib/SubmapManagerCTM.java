@@ -1,7 +1,5 @@
 package team.chisel.ctmlib;
 
-import lombok.Getter;
-
 import net.minecraft.block.Block;
 import net.minecraft.client.renderer.RenderBlocks;
 import net.minecraft.client.renderer.texture.IIconRegister;
@@ -11,6 +9,7 @@ import net.minecraftforge.common.util.ForgeDirection;
 
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
+import lombok.Getter;
 
 /**
  * A convenience implementation of {@link ISubmapManager} which does the standard CTM behavior.

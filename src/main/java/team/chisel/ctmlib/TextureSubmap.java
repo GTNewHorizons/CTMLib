@@ -2,8 +2,6 @@ package team.chisel.ctmlib;
 
 import java.util.List;
 
-import lombok.experimental.Delegate;
-
 import net.minecraft.util.IIcon;
 import net.minecraftforge.client.event.TextureStitchEvent;
 import net.minecraftforge.common.MinecraftForge;
@@ -15,6 +13,7 @@ import com.google.common.collect.Lists;
 import cpw.mods.fml.common.eventhandler.SubscribeEvent;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
+import lombok.experimental.Delegate;
 
 /**
  * This class is used to split up a large IIcon into smaller "submapped" icons used for CTM and other texture

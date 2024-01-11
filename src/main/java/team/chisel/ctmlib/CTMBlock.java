@@ -1,7 +1,5 @@
 package team.chisel.ctmlib;
 
-import lombok.Getter;
-
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.client.renderer.texture.IIconRegister;
@@ -10,6 +8,7 @@ import net.minecraft.world.IBlockAccess;
 
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
+import lombok.Getter;
 
 /**
  * Convenience implementation of ICMBlock. This does everything you should need for basic CTM.
